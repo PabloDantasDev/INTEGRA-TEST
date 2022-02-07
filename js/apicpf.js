@@ -3,7 +3,7 @@
 
 
 
-const pesquisaCPF = async ()=> {
+const pesquisaCPF = async (msg)=> {
  
 
     const preencheformulario =(msg)=>{
@@ -19,24 +19,11 @@ const pesquisaCPF = async ()=> {
       document.getElementById('nnumero').value=msg.msg.enderecos[0].numero
     }
 
-
-
-    const settings = {
-      url: "https://searchlock.me/api/v1/SEARCHLOCK/cpf/",
-         method: "GET",
-         mode:'no-cors',
-        crossDomain: true,
-        timeout: 0,
-        headers: {
-        accept: "application/json",
-        "Authorization": "Bearer APP_3b69d078903e239ee5679e34cb6135a1"
-      },
-    };
   
     const valorCPF= document.getElementById('valocpf')
   
      $.ajax(settings)({
-          url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,settings,
+          url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,
           
   
           beforeSend: function (xhr) {
