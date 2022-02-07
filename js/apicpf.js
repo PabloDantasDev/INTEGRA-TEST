@@ -22,7 +22,7 @@ const pesquisaCPF = async ()=> {
 
 
     const settings = {
-      url: "http://searchlock.me/api/v1/SEARCHLOCK/cpf/",
+      url: "https://searchlock.me/api/v1/SEARCHLOCK/cpf/",
          method: "GET",
          mode:'no-cors',
         crossDomain: true,
