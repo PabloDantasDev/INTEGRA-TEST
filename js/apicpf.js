@@ -20,7 +20,7 @@ const pesquisaCPF = async (msg)=> {
     }
 
   
-    const valorCPF= document.getElementById('Valocpf').value
+    const valorCPF= document.getElementById('Valocpf').value;
         
      $.ajax({
           url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,
