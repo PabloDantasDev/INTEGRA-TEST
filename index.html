@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="css/login.css">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | INTEGRA DATA</title>
+</head>
+<body>
+   
+<div class="container">
+   <div class="content first-content"> 
+
+        <div class="first-column">
+            <h1 class="host">INTEGRA DATA</h1>
+            <h2 class="title">Bem Vindo de Volta!</h2>
+            <div id="erro"></div>
+            <div id="sucesso"></div>
+            <p class="description">Faça login com seus dados</p>
+            <form action="" class="formulario">
+
+               <input  type="text" placeholder="Usuário" id="user">
+                <input  type="password" placeholder="Senha" id="senha">
+                 <i class="fa fa-eye"></i>
+
+                <button class="btn" ><a href="#" onclick="entrar()" >ENTRAR</a></button>
+                <p class="fazconta">Não possui uma conta?</p>
+                <p class="fazconta">Crie uma conta</p>
+                <button class="btn"><a href="cadastro.html">Criar Conta</a></button>
+    
+            </form>
+        </div>
+</div>
+
+
+</body>
+<script defer src="js/login.js"></script>
+</html>

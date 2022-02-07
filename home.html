@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEGRA DATA</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="user">
+        <img src="image/perfil.jpg" alt="">
+
+        <h3 id="logado"> </h3>
+        <p>Meu Painel</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="#saldo">Meu Saldo : <span>R$ 34,80 </span></a>
+        <a href="#home">INICIO</a>
+        <a href="#cep">Consultar CEP <span id="valor">R$0,50</span></a>
+        <a href="#cpf">Consultar CPF <span id="valor">R$0,50</span></a>
+        
+      <!---  <a href="#portfolio">Consultar IP <span id="valor">R$0,50</span></a>    
+    <a href="#about">Consultar PLACA <span id="valor">R$0,50</span></a>-->
+       
+
+        
+        
+    <a href="#" onclick="sair()">SAIR <span></span></a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- theme toggler  -->
+
+<div id="theme-toggler" class="fas fa-moon"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>INTEGRA DATA</h3>
+        <p>Consultas em um só lugar!</p>  
+    </div>
+    <div class="share">
+        <a href="#" id="whatsapp" class="fab fa-whatsapp"></a>
+        <a href="#" id="telegram" class="fab fa-telegram"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <div class="credits" id="copy"> created by <span>Henrique Dantas | Desenvolvedor Full-Stack</span> | all rights reserved </div>
+    </div>
+</section>
+
+
+<!-- home section ends -->
+
+<section class="cep" id="cep">
+
+    <h1 class="headingCEP"> <span>CONSULTAR</span> CEP </h1> 
+   
+<form >
+        <input  placeholder="Informe o CEP" class="box" id="numeroCep" maxlength="9">
+        <input type="text" placeholder="Rua" class="box" id="logradouro" disabled>
+        <input  placeholder="Complemento" class="box" id="complemento" disabled>
+        <input  placeholder="Bairro" class="box" id="bairro" disabled>
+        <input  placeholder="Cidade" class="box" id="cidade" disabled>
+        <input  placeholder="Estado" class="box" id="estado"disabled>
+        <input onclick="pesquisaCep()"  id="cepbtn" type="submit" value="Consultar" class="btn" >
+        <input  onclick="limpaCampos()" id="limpacep" type="submit" value=" Nova Consultar" class="btn" >
+        
+    </form>
+   
+</section>
+
+
+
+
+<div class="credits"> created by <span>Henrique Dantas</span> | all rights reserved </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+<script src="script.js"></script>
+</html>

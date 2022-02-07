@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO INTEGRA DATA</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="content first-content"> 
+     
+             <div class="first-column">
+                 <h1 class="host">INTEGRA DATA</h1>
+                 <h2 class="title">CADASTRO</h2>
+                 <div id="erro"></div>
+                 <div id="sucesso"></div>
+                 <p id="instrucao" class="description"></p>
+
+                 <form action="" class="formulario">
+                    <input id="inputUsuario" type="text" placeholder="Digite um Usuário" required>
+
+                     <input id="inputSenha" type="password" placeholder="Digite uma Senha" class="senha" required>
+                     <i class="fa fa-eye"></i>
+                    
+                     <input id="inputRepitaSenha" type="password" placeholder="Repita a Senha" class="rsenha" required>
+                     <i class="fa fa-eye eyee"></i>
+
+                     <button class="btn" href="#" onclick="cadastrar()"><a href="#" onclick="cadastrar">Criar Conta</a></button>
+                     <p class="fazconta">Agora Acesse Sua Conta!</p>
+                     <button class="btn"><a href="index.html">ACESSAR CONTA</a></button>
+         
+                 </form>
+             </div>
+     </div>
+</body>
+<script  src="js/cadastro.js"></script>
+</html>
