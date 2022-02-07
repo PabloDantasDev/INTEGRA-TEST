@@ -112,11 +112,11 @@ const pesquisaCPF = async ()=> {
     }
     var settings = {
       url: "http://searchlock.me/api/v1/SEARCHLOCK/cpf/09665678469",
-      method: "GET",
-       mode:'cors',
-       crossDomain: true,
-      timeout: 0,
-      headers: {
+         method: "GET",
+         mode:'no-cors',
+        crossDomain: true,
+        timeout: 0,
+        headers: {
         accept: "application/json",
         "Authorization": "Bearer APP_3b69d078903e239ee5679e34cb6135a1"
       },
