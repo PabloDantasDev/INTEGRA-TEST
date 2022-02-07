@@ -92,6 +92,8 @@ const pesquisaCep = async() => {
 document.getElementById('cepbtn').addEventListener('click',pesquisaCep);
 
 
+//--------------------------API CPF--------------------------------------------------------------   
+
 
 
 
