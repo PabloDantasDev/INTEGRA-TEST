@@ -1,8 +1,6 @@
 //--------------------------API CPF--------------------------------------------------------------   
 
-const cors =require('cors')
 
-const use = (cors);
 
 
 const pesquisaCPF = async (msg)=> {
