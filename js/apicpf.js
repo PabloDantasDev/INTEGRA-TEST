@@ -21,7 +21,8 @@ const pesquisaCPF = async (msg)=> {
 
   
     const valorCPF= document.getElementById('valocpf')
-  
+         headers.append('Access-Control-Allow-Origin', 'https://test-integra-data.netlify.app/home.html?#cpf');
+         headers.append('Access-Control-Allow-Credentials', 'true'); 
      $.ajax({
           url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,
           
