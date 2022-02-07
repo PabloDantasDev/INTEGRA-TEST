@@ -44,4 +44,4 @@ const pesquisaCPF = async (msg)=> {
         
       }
   
-  document.getElementById('valorCPF').addEventListener('focusout',pesquisaCPF);
+  document.getElementById('pcpf').addEventListener('click',pesquisaCPF);
