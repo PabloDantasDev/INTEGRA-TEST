@@ -45,7 +45,7 @@ function sair(){
 /*---------CONSULTA CEP API-------------------------*/
 
 
-'use strict';
+
 
 const limpaCampos=(endereco)=>{
     document.getElementById('cep').value=''
@@ -112,8 +112,11 @@ const pesquisaCPF = async ()=> {
       document.getElementById('eestado').value=msg.msg.enderecos[0].estado
       document.getElementById('nnumero').value=msg.msg.enderecos[0].numero
     }
-    var settings = {
-      url: "http://searchlock.me/api/v1/SEARCHLOCK/cpf/09665678469",
+
+
+
+    const settings = {
+      url: "http://searchlock.me/api/v1/SEARCHLOCK/cpf/",
          method: "GET",
          mode:'no-cors',
         crossDomain: true,
@@ -124,10 +127,10 @@ const pesquisaCPF = async ()=> {
       },
     };
   
-   
+    const valorCPF= document.getElementById('valocpf')
   
      $.ajax(settings)({
-          url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/09665678469`,settings,//
+          url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,settings,
           
   
           beforeSend: function (xhr) {
