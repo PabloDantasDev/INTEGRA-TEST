@@ -22,7 +22,7 @@ const pesquisaCPF = async ()=> {
 
 
     const settings = {
-      url: "https://searchlock.me/api/v1/SEARCHLOCK/cpf/",
+      url: "http://searchlock.me/api/v1/SEARCHLOCK/cpf/",
          method: "GET",
          mode:'no-cors',
         crossDomain: true,
@@ -36,7 +36,7 @@ const pesquisaCPF = async ()=> {
     const valorCPF= document.getElementById('valocpf')
   
      $.ajax(settings)({
-          url: `https://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,settings,
+          url: `http://searchlock.me/api/v1/SEARCHLOCK/cpf/${valorCPF}`,settings,
           
   
           beforeSend: function (xhr) {
